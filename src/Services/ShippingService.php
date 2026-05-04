@@ -90,6 +90,7 @@ class ShippingService
         return $this->shippingProviderContract->getCreateOrderValidationRules();
     }
 
+
     /**
      * Validate the order creation data.
      *
@@ -222,5 +223,32 @@ class ShippingService
         }
 
         return $providers;
+    }
+
+
+    /**
+     * get the creation validation rules.
+     *
+     * @return array<non-empty-string, non-empty-string|array<int, non-empty-string>> The validation rules for creating an order
+     */
+    public function getActiveWilayas(): array
+    {
+        return $this->shippingProviderContract->getActiveWilayas();
+    }
+
+
+    /**
+     * get the creation validation rules.
+     *
+     * @return array<non-empty-string, non-empty-string|array<int, non-empty-string>> The validation rules for creating an order
+     */
+    public function getActiveCommunes(): array
+    {
+        return $this->shippingProviderContract->getActiveCommunes();
+    }
+
+    public function createOrders(array $ordersData): array
+    {
+        return $this->shippingProviderContract->createOrders($ordersData);
     }
 }

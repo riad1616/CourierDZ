@@ -122,4 +122,26 @@ interface ShippingProviderContract
      * @return void
      */
     //    public function validateUpdate(array $data): void;
+
+    /**
+     * create multipl orders.
+     *
+     * @param  array  $ordersData
+     * @return array
+     */
+    public function createOrders(array $ordersData): array;
+
+    /**
+     *get all active wilayas.
+     *
+     * @return array
+     */
+    public function getActiveWilayas(): array;
+
+    /**
+     * get all active communes.
+     *
+     * @return array
+     */
+    public function getActiveCommunes(): array;
 }
