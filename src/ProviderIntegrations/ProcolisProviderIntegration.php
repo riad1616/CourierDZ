@@ -308,4 +308,30 @@ abstract class ProcolisProviderIntegration implements ShippingProviderContract
      * {@inheritdoc}
      */
     abstract public static function metadata(): array;
+
+    /**
+     * {@inheritdoc}
+     */
+    public function createOrders(array $ordersData): array
+    {
+        throw new NotImplementedException('Not implemented');
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getActiveWilayas(): array
+    {
+
+        throw new NotImplementedException('Not implemented');
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getActiveCommunes(): array
+    {
+
+        throw new NotImplementedException('Not implemented');
+    }
 }

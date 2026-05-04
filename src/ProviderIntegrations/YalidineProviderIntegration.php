@@ -266,4 +266,30 @@ abstract class YalidineProviderIntegration implements ShippingProviderContract
             throw new HttpException($guzzleException->getMessage());
         }
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function createOrders(array $ordersData): array
+    {
+        throw new NotImplementedException('Not implemented');
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getActiveWilayas(): array
+    {
+
+        throw new NotImplementedException('Not implemented');
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getActiveCommunes(): array
+    {
+
+        throw new NotImplementedException('Not implemented');
+    }
 }
