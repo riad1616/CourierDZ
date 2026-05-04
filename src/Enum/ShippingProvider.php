@@ -8,6 +8,7 @@ enum ShippingProvider: string
 {
     // Ecotrack
     case DHD = 'Dhd';
+    case HHD = 'Hhd';
     case CONEXLOG = 'Conexlog';
     case MSMGO = 'MsmGo';
     case REXLIVRAISON = 'RexLivraison';
